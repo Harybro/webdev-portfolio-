@@ -92,7 +92,6 @@ body {
 }
 
 #projects-grid .card:hover {
-    transform: translateY(-8px);
     box-shadow: 0 14px 36px rgba(0,0,0,0.6);
 }
 
