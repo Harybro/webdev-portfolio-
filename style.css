@@ -70,3 +70,53 @@ body {
     background-color: #444444;
 }
 
+/* Project card styling to match dark site theme */
+#projects-grid .card {
+    background-color: #1b1b1b !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.04) !important;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+#projects-grid .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.6);
+}
+
+#projects-grid .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255,255,255,0.04) !important;
+    background-color: #2b2b2b; /* covers blank/placeholder areas */
+}
+
+#projects-grid .card-title {
+    color: #5fb0ff; /* accent color matching site */
+    font-weight: 600;
+}
+
+#projects-grid .card-text {
+    color: #d6d6d6;
+}
+
+#projects-grid .btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+#projects-grid .btn-outline-secondary {
+    color: #d6d6d6;
+    border-color: rgba(255,255,255,0.06);
+}
+
+/* Make card actions aligned and consistent */
+#projects-grid .card-body {
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 575.98px) {
+    #projects-grid .card-img-top {
+        height: 140px;
+    }
+}
+
