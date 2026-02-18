@@ -1,3 +1,15 @@
+/* Collapse card background for show more sections */
+.collapse-card-bg {
+    background-color: #18191a !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,0.04) !important;
+}
+/* Alternate card background for experience/side cards */
+.alt-card-bg {
+    background-color: #232323 !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,0.04) !important;
+}
 /* Footer full width and spacing */
 .site-footer {
     margin-left: 0;
