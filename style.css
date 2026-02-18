@@ -1,3 +1,11 @@
+/* Footer full width and spacing */
+.site-footer {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
 
 .hero-section::after {
     display: none;
@@ -81,6 +89,8 @@
 
 body {
     background-color: #444444;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
 }
 
 /* Project card styling to match dark site theme */
