@@ -1,17 +1,30 @@
-.hero-section {
-    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=600&fit=crop');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 80px 0;
+
+.hero-section::after {
+    display: none;
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95) !important;
+    background-color: #121212 !important;
+    color: #B0B0B0 !important;
+}
+
+.navbar .navbar-brand {
+    color: #B0B0B0 !important;
+}
+
+.navbar .nav-link {
+    color: #B0B0B0 !important;
 }
 
 .hero-section h1 {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(143, 55, 55, 0.7);
     font-weight: bold;
+    position: relative;
+    z-index: 1;
 }
+
+body {
+    background-color: #444444;
+}
+
