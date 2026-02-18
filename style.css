@@ -5,15 +5,57 @@
 
 .navbar {
     background-color: #121212 !important;
-    color: #B0B0B0 !important;
+    color: #ffffff !important;
 }
 
 .navbar .navbar-brand {
-    color: #B0B0B0 !important;
+    color: #ffffff !important;
 }
 
 .navbar .nav-link {
-    color: #B0B0B0 !important;
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: #ffffff !important;
+}
+
+.navbar .dropdown-item {
+    color: #ffffff !important;
+}
+
+/* Make dropdown menus visible on dark background (especially on small screens) */
+.navbar .dropdown-menu {
+    background-color: #1b1b1b !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.45) !important;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: rgba(255,255,255,0.06) !important;
+    color: #ffffff !important;
+}
+
+/* When the navbar is collapsed on small screens, ensure dropdowns are full-width and visible */
+@media (max-width: 991.98px) {
+    .navbar .dropdown-menu {
+        position: static !important;
+        float: none !important;
+        display: none !important;
+        width: 100%;
+    }
+
+    /* Only show dropdown when its parent has the Bootstrap 'show' class */
+    .navbar .dropdown.show > .dropdown-menu {
+        display: block !important;
+    }
+    /* Also allow showing when Bootstrap adds .show to the menu itself */
+    .navbar .dropdown .dropdown-menu.show {
+        display: block !important;
+    }
 }
 
 .hero-section h1 {
