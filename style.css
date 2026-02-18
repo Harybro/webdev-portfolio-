@@ -93,6 +93,7 @@ body {
 
 #projects-grid .card:hover {
     box-shadow: 0 14px 36px rgba(0,0,0,0.6);
+    transform: translateY(-10px);
 }
 
 #projects-grid .card-img-top {
