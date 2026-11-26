@@ -73,35 +73,40 @@
   <!-- Custom card layout below projects -->
   <!-- Row 1: name card, centred -->
 
-<div class="row g-4 mt-4 justify-content-center">
-  <div class="col-12 col-md-6">
-<div class="card h-100 shadow-sm border-0 alt-card-bg">
-  <div class="card-body">
-    <h3 class="card-title text-white text-center">Hi, I'm Harry Catalano</h3>
-    <p class="card-text center-block-left-text">I am a student at the university of dundee in my second year of computer science, with a HNC in Software Development from Borders College.</p>
-    <p class="card-text center-block-left-text">I have strong interest in programming, software development, and problem solving, and i enjoy using technology to turn ideas into workign projects. Python is my strongest programming langauge alothough i also have ecperiance in java, c, c# and web development technologies sucjh as HTML,css and javascript</p>
-    <p class="card-text center-block-left-text">I am particularly interested in continuing to develop my programming abilitiesm exploring new technologies and gainng practical experiance in the software development industry.</p>
-    <button class="border-0 bg-transparent text-primary text-center"
-        onclick="copyEmail(this)">
-    <i class="fa fa-copy"></i> Copy Email
-</button>
+<div class="card-body d-flex justify-content-center align-items-center gap-2">
 
+    <button class="border-0 bg-transparent text-primary"
+        onclick="copyEmail(this)">
+        <i class="fa fa-copy"></i> Email
+    </button>
+
+    <a href="https://github.com/Harybro"
+        class="text-primary"
+        target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github"></i> GitHub
+    </a>
+
+</div>
 <script>
     function copyEmail(button) {
-        navigator.clipboard.writeText("example@email.com").then(() => {
+        navigator.clipboard.writeText("2687940@dundee.ac.uk").then(() => {
             button.innerHTML = '<i class="fa fa-check"></i> Copied!';
 
             setTimeout(() => {
-                button.innerHTML = '<i class="fa fa-copy"></i> Copy Email';
+                button.innerHTML = '<i class="fa fa-copy"></i> Email';
             }, 2000);
         });
     }
 </script>
-
-
-    <a href="https://github.com/Harybro" class="text-primary" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-github text-center"></i> GitHub
-    </a>
+<div class="row g-4 mt-4 justify-content-center">
+  <div class="col-12 col-md-6">
+<div class="card h-100 shadow-sm border-0 alt-card-bg">
+ <div class="card-body">
+    <h3 class="card-title text-white text-center">Hi, I'm Harry Catalano</h3>
+    <p class="card-text center-block-left-text">I am a student at the university of dundee in my second year of computer science, with a HNC in Software Development from Borders College.</p>
+    <p class="card-text center-block-left-text">I have strong interest in programming, software development, and problem solving, and i enjoy using technology to turn ideas into workign projects. Python is my strongest programming langauge alothough i also have ecperiance in java, c, c# and web development technologies sucjh as HTML,css and javascript</p>
+    <p class="card-text center-block-left-text">I am particularly interested in continuing to develop my programming abilitiesm exploring new technologies and gainng practical experiance in the software development industry.</p>
+    
   </div>
 </div>
   </div>
@@ -142,7 +147,7 @@
               <li>JavaFX desktop applications</li>
               <li>OOP and design patterns</li>
             </ul>
-            <p>See my portfolio for Java code, apps.</p>
+            <p>See more in projects</p>
           </div>
         </div>
       </div>
