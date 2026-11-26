@@ -9,6 +9,7 @@
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
           <link href="style.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
 <body class="d-flex flex-column min-vh-100"> 
@@ -79,7 +80,27 @@
     <p class="card-text center-block-left-text">I am a student at the university of dundee in my second year of computer science, with a HNC in Software Development from Borders College.</p>
     <p class="card-text center-block-left-text">I have strong interest in programming, software development, and problem solving, and i enjoy using technology to turn ideas into workign projects. Python is my strongest programming langauge alothough i also have ecperiance in java, c, c# and web development technologies sucjh as HTML,css and javascript</p>
     <p class="card-text center-block-left-text">I am particularly interested in continuing to develop my programming abilitiesm exploring new technologies and gainng practical experiance in the software development industry.</p>
-    <a class="nav-link" href="https://github.com/Harybro" target="_blank">Github</a>
+    <button class="border-0 bg-transparent text-primary"
+        onclick="copyEmail(this)">
+    <i class="fa fa-copy"></i> Copy Email
+</button>
+
+<script>
+    function copyEmail(button) {
+        navigator.clipboard.writeText("example@email.com").then(() => {
+            button.innerHTML = '<i class="fa fa-check"></i> Copied!';
+
+            setTimeout(() => {
+                button.innerHTML = '<i class="fa fa-copy"></i> Copy Email';
+            }, 2000);
+        });
+    }
+</script>
+
+
+    <a href="https://github.com/Harybro" class="text-primary" target="_blank" rel="noopener noreferrer">
+      <i class="fa fa-github"></i> GitHub
+    </a>
   </div>
 </div>
   </div>
